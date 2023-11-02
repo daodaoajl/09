@@ -5,11 +5,9 @@
 
 int main(void)
 {
-  int i,average, sum;
+  int i;
   int grade[N_STUDENT];
   int score[N_STUDENT];
-  
-  sum = 0;
   
   for(i=0;i<N_STUDENT;i++)
       grade[i] = rand() % 100 + 1;
