@@ -7,19 +7,18 @@ int main(void)
 {
   int i,average, sum;
   int grade[N_STUDENT];
+  int score[N_STUDENT];
   
   sum = 0;
   
-  printf("input 5 scores : ");
+  for(i=0;i<N_STUDENT;i++)
+      grade[i] = rand() % 100 + 1;
+      
+  for(i=0;i<N_STUDENT;i++)
+      score[i] = grade[i];
   
   for(i=0;i<N_STUDENT;i++)
-  {
-      scanf("%d", &grade[i]);
-      sum += grade[i];
-  }
-  
-  average = sum / N_STUDENT;
-  printf("score average : %i\n", average);
+     printf("score[%i] =%i(grade:%i)\n", i, score[i],grade[i]);
   
   system("PAUSE");	
   return 0;
